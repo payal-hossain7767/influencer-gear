@@ -14,29 +14,137 @@
     font-style: normal;
 }
 
+.btn-img {
+    width: 36px;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 6px 24px;
+    border-radius: 41px;
+    background: rgb(224, 44, 109);
+    border: none;
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    font-weight: 700;
+
+}
+
 /*  */
+.nabver {
+    margin-bottom: 50px;
+}
+
+.navber-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    /* border: 2px solid tomato; */
+}
 
 .li-item {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 30px;
-    border: 2px solid tomato;
-
-}
-
-.li {
-    text-decoration: none;
-    color: rgb(27, 25, 25);
 }
 
 .home-img {
     display: flex;
     align-items: center;
     gap: 30px;
+    margin-left: 350px;
+}
 
+.product {
+    color: rgb(58, 58, 58);
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.li {
+    text-decoration: none;
+    color: rgb(58, 58, 58);
+    font-size: 1rem;
+    font-weight: 600;
 }
 
 .img-search {
-    width: 3%;
+    width: 24px;
+}
+
+.hidden {
+    display: none;
+}
+
+/* benner section */
+
+
+.banner-h {
+    color: rgb(58, 58, 58);
+    font-size: 2.8rem;
+    font-weight: 700;
+    padding: 20px;
+}
+
+.banner-p {
+    color: rgb(58, 58, 58);
+    font-size: 16px;
+    font-weight: 600;
+    padding: 20px;
+}
+
+.main-camera {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.banner-all {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner {
+    background: url(../images/Circle\ design.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    margin-bottom: 50px;
+}
+
+@media screen and (max-width:576px) {
+    .home-img {
+        display: none;
+    }
+.shopping-card{
+    margin-right:90px ;
+}
+    .hidden {
+        display: flex;
+        justify-content: center;
+    }
+    .banner-all {
+        flex-direction: column;
+        gap: 60px;
+    }
+    .banner {
+        background: url(../images/Circle\ design.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-position: bottom;
+        background-size: contain;
+        width: 80%;
+    }
+    .banner-container{
+        text-align: center;
+    }
+    .btn-container{
+        display: flex;
+        justify-content: center;
+    }
+
 }
